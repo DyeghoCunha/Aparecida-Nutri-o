@@ -1,0 +1,37 @@
+
+.icones{
+    display: flex;
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+
+.elements1.img1{
+    top: 0;
+    left: initial;
+    right: 10px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    transform: translateZ(120px);
+}
+
+.elements1.img1 img{
+    position: absolute;
+    width: calc(100% - 20px);
+    
+    border: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.75);
+    border-left: 1px solid rgba(255,255,255,0.75);
+    border-radius: 8px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.05);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .elements1.img1 img{
+    opacity: 1;
+}
