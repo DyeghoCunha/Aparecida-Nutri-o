@@ -9,12 +9,14 @@
 		<script src="https://use.fontawesome.com/ac1f95fcf3.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+		
+
 	</head>
 	<body>
 
 		<header>
 			<div class="container">
-				<h1>Aparecida Nutrição</h1>
+				<h1 class="titulo">Aparecida Nutrição</h1>
 			</div>
 		</header>
 		<main>
@@ -31,7 +33,7 @@
 						</tr>
 					</thead>
 					<tbody id="tabela-pacientes">
-						<tr class="paciente" >
+						<tr class="paciente"  >
 							<td class="info-nome">Paulo</td>
 							<td class="info-peso">100</td>
 							<td class="info-altura">2.00</td>
@@ -71,35 +73,42 @@
 						</tr>
 					</tbody>
 				</table>
-				<section class="icones">
-					
-				<div class="elements1 img1">
-                    <img src="./img/frutas/1.png" alt="">
-                </div>
-				<div class="elements2 img2">
-                    <img src="./img/frutas/2.png" alt="">
-                </div>
 
-				</section>
+				
+			
+			</section>
+
+			<section class="container">
+				<h2 id="titulo-form">Adicionar Novo Paciente</h2>
+
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="nome">Nome</label>
+						<input id="nome" nome="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+					</div>
+
+					<div class="grupo">
+						<label for="peso">Peso</label>
+						<input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="altura">Altura</label>
+						<input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="gordura">% de Gordura:</label>
+						<input id="gordura" nome="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente " class="campo campo-medio">
+					</div>
+
+					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+				</form>
+
+
 
 			</section>
+			
 		</main>
 
-
-
-
-				<!-- Função de Movimento dos icones -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script>
-		   VanillaTilt.init(document.querySelector(".box"), {
-		   max: 15,
-		   speed: 400,
-		   glare:true,
-	   });
-	   </script>
-	
-
-
-
+		<script src="./js/principal.js"></script>
 </body>
 </html>
