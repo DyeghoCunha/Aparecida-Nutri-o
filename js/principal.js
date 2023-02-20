@@ -92,10 +92,6 @@ botaoAdicionar.addEventListener("click",function(event){
 
                     console.log(pacienteTr)
             
-            
-            
-            
-            
             })
 
 
