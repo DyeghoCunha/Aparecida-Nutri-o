@@ -149,3 +149,19 @@ font-weight: bold;
 	color: red;
 	text-shadow: #000000 1px 1px 10px;
 }
+
+.fadeOut{
+	opacity: 0;
+	transition: 2s;
+}
+
+#filtrar-tabela{
+	width: 70%;
+	height: 25px;
+	margin-bottom: 1.5em;
+	font-size: ;
+}
+
+.invisivel{
+	display: none;
+}

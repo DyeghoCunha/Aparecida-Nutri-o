@@ -1,13 +1,36 @@
 var pacientes = document.querySelectorAll(".paciente");
 
-pacientes.forEach(function(paciente){
+var tabela = document.querySelector("table");
 
-    paciente.addEventListener("dblclick", function(){
+tabela.addEventListener("dblclick", function(event){
+   
+    event.target.parentNode.classList.add("fadeOut")
 
-    console.log("Fui clicado com um duplo clique");
+    setTimeout(() => {
+        event.target.parentNode.remove();
+        
+    }, 1800);
 
-    this.remove()
+    // var alvoEvento = event.target;
+    // var paiDoAlvo = alvoEvento.parentNode;
+
+
+    // paiDoAlvo.remove();
+
+
+
 })
 
 
-})
+
+// pacientes.forEach(function(paciente){
+
+//     paciente.addEventListener("dblclick", function(){
+
+//     console.log("Fui clicado com um duplo clique");
+
+//     this.remove()
+// })
+
+
+// })
